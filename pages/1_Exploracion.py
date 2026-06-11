@@ -87,9 +87,9 @@ if nulos.empty:
 else:
     st.warning(f"⚠️ Se encontraron valores nulos en {len(nulos)} columna(s).")
     st.dataframe(
-        nulos.style.background_gradient(subset=["Porcentaje (%)"], cmap="Reds"),
-        use_container_width=True,
-    )
+    nulos,
+    use_container_width=True,
+)
 
 st.markdown("---")
 
